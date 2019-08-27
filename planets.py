@@ -25,8 +25,9 @@ spacecraft = [
 ]
 
 for planet in planet_list:
-    for planet in spacecraft:
-        print("space",planet)
-
-# print("rocky planets", rocky_planets)
-# print("all planets", planet_list)
+    print(planet)
+    for visited in spacecraft:
+        if visited[1] == planet:
+            print(f"{planet} has been visted by {visited[0]}")
+        # else:
+            # print(planet)
